@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "فروشگاه اپلیکیشن اندروید",
+    "repo": "USERNAME/REPO"
+  },
+  "apps": [
+    {
+      "slug": "example-app",
+      "name": "برنامه نمونه",
+      "category": "ابزار",
+      "short": "یک توضیح کوتاه یک‌خطی درباره برنامه",
+      "desc": "توضیحات کامل برنامه.\n\nبین پاراگراف‌ها یک خط خالی بگذارید.",
+      "icon": "example-app/icon.png",
+      "shots": ["example-app/1.png", "example-app/2.png"],
+      "published": true,
+      "versions": [
+        {
+          "name": "1.0.0",
+          "code": 1,
+          "minAndroid": "5.0",
+          "date": "2026-10-16",
+          "changelog": "اولین نسخه",
+          "file": "example-app-1.0.0.apk"
+        }
+      ]
+    }
+  ]
+}

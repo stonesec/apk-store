@@ -1,0 +1,45 @@
+:root{--bg:#f2f6f4;--sf:#fff;--ink:#10231c;--mu:#5a6e66;--ln:#d6e2dc;--ac:#0b7a5a;--ac2:#e9f5ef;--wa:#b4570a;--er:#b42318;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1714;--sf:#15211d;--ink:#e8f1ed;--mu:#97aaa2;--ln:#26362f;--ac:#3fcf9b;--ac2:#173027;--wa:#f0a24a;--er:#ff8a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.9 Vazirmatn,Tahoma,"Segoe UI",sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
+.w{max-width:1040px;margin:0 auto;padding:0 14px}
+.top{background:var(--sf);border-bottom:1px solid var(--ln);position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.logo{font-weight:800;font-size:18px;color:var(--ink)}
+.top .s{display:flex;gap:6px;flex:1;max-width:380px}
+input,select,textarea{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--ln);border-radius:9px;background:var(--bg);color:var(--ink)}
+input:focus,textarea:focus,select:focus,a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+.b,.btn{display:inline-block;font:inherit;font-weight:600;background:var(--ac);color:#fff;border:0;border-radius:9px;padding:8px 14px;cursor:pointer;text-align:center;white-space:nowrap}
+@media(prefers-color-scheme:dark){.b,.btn{color:#062a1d}}
+.b:hover,.btn:hover{filter:brightness(1.08);text-decoration:none}
+.b.s{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.b.d{background:transparent;color:var(--er);border:1px solid var(--er);padding:3px 9px}
+.btn{padding:10px 20px;font-size:16px}.btn.sm{padding:5px 12px;font-size:14px}
+.hero{padding:26px 0 6px}.hero h1{margin:0;font-size:26px}.hero p{margin:4px 0 0;color:var(--mu)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.chips a{padding:3px 14px;border:1px solid var(--ln);border-radius:99px;color:var(--ink);background:var(--sf)}
+.chips a.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-bottom:30px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0;font-size:16px}.card p{margin:0;color:var(--mu);font-size:13.5px;flex:1}
+.cl{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.ic{width:64px;height:64px;border-radius:16px;object-fit:cover;flex:none;background:var(--ac2)}
+.ph{display:grid;place-items:center;font-size:28px;font-weight:800;color:var(--ac)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--mu)}
+.empty{padding:40px 0;text-align:center;color:var(--mu)}
+.ah{display:flex;gap:16px;align-items:center;padding:24px 0 10px}.ah .ic{width:96px;height:96px;border-radius:24px}
+.ah h1{margin:0;font-size:24px}.ah p{margin:2px 0 10px;color:var(--mu)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:10px 0}
+.facts div{background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:8px 12px}
+.facts dt{font-size:12px;color:var(--mu)}.facts dd{margin:0;font-weight:700}
+.shots{display:flex;gap:10px;overflow-x:auto;padding:8px 0}.shots img{height:300px;border-radius:12px;border:1px solid var(--ln);flex:none}
+.app h2{font-size:18px;margin:22px 0 4px}
+.vers{list-style:none;padding:0;margin:0}.vers li{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:10px 14px;margin-bottom:8px}
+.vers span{color:var(--mu);font-size:13px}.vers p{margin:2px 0 0;font-size:13.5px}
+.foot{padding:26px 14px;color:var(--mu);font-size:13px;text-align:center}
+@media(max-width:560px){.ah{flex-direction:column;text-align:center}.shots img{height:240px}}
+.hint{background:var(--ac2);border-radius:12px;padding:10px 14px;margin:10px 0;font-size:14px}
+.ok{color:var(--ac)}.no{color:var(--er)}
+.tw{overflow-x:auto}
